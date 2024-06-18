@@ -11,9 +11,18 @@
     border-radius: 11px;
 }
 
+#/* General styles */
+
+.logo {
+    height: 50px; /* Adjust height as needed */
+    width: 50px; /* Adjust width as needed */
+    border-radius: 50%;
+}
+
+/* Header styles */
+
 #header {
     display: flex;
-    font-family: "DM Sans", sans-serif;
     align-items: center;
     justify-content: space-between;
     padding: 10px 50px;
@@ -28,26 +37,41 @@
     z-index: 1000;
 }
 
+/* Navbar styles */
+
 #navbar {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #c0f5a3; /* Navbar background color */
+    padding: 10px 0; /* Adjusted padding */
+    box-shadow: 0 5px 15px rgba(78, 78, 78, 0.06);
+    position: fixed;
+    top: 100px; /* Adjusted top position */
     width: 100%;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 #navbar li {
-    list-style: none;
-    padding: 0 20px;
+    margin: 0 10px; /* Adjusted margin */
     position: relative;
 }
 
 #navbar li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px; /* Adjusted font size */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 200;
     transition: 0.2s ease;
     color: #333;
+    padding: 10px; /* Adjusted padding */
 }
 
 #navbar li a.active {
@@ -55,14 +79,9 @@
     color: #007bff;
 }
 
-.homeicon {
-    width: 30px;
-    height: auto;
-}
-
-#navbar li a:hover {
+/* #navbar li a:hover {
     color: rgb(71, 13, 36);
-}
+} */
 
 #navbar li a.active::after {
     content: "";
@@ -70,8 +89,10 @@
     height: 30px;
     position: absolute;
     bottom: -4px;
-    left: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 
 /* Hero section */
 
@@ -165,7 +186,7 @@
 
 .section_p1 .fe-box {
     text-align: center;
-    box-shadow: 2px 20px 33px rgba(0, 0, 0, 0.1); /* Adjusted box shadow color */
+    box-shadow: 2px 20px 33px rgba(15, 75, 135, 0.1); /* Adjusted box shadow color */
     border-radius: 19px;
     padding: 20px;
     margin: 20px;
