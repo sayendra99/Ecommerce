@@ -1,97 +1,119 @@
-.logo{
-
- height: 20%;
- width: 20%;
- border-radius: 50%;
+.logo {
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
 }
 
-#header{
-
-display:flex;
-font-family: "DM Sans", sans-serif;
-
-align-items: center;
-justify-content: space-between;
-padding: 10px 50px;
-background:#c0f5a3;
-box-shadow:0 5px 15px rgba(78, 78, 78, 0.06);
-/* position: 90vh; */
-width:199.5vh;
+.homeicon {
+    height: 10%;
+    border-radius: 11px;
 }
 
-#navbar
-{
-Display:flex;
-align-items: center;
-justify-content:center;
-width:100%
-
+#header {
+    display: flex;
+    font-family: "DM Sans", sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background: #c0f5a3;
+    box-shadow: 0 5px 15px rgba(78, 78, 78, 0.06);
+    width: 100%;
+    max-width: 1200px; /* Adjusted for better fit on laptop screens */
+    margin: 0 auto; /* Center the header */
 }
 
+#navbar {
+    display: flex; /* Corrected to lowercase 'display' */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
-#navbar li{
-
-    list-style:none;
-    padding:0px 20px;
+#navbar li {
+    list-style: none;
+    padding: 0px 20px;
     position: relative;
 }
-#navbar li a{text-decoration: none;
-    font-size: 20px;font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: 200;
 
-transition: 0.2s ease;
-
-}
-#navbar li a:hover{
-
-    color:rgb(71, 13, 36);
-
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    transition: 0.2s ease;
 }
 
-#navbar li a.active::after{
-
-    content:"";
-    width:20px;height: 30px;
-    /* background-color: beige; */
-    position:absolute;
-    bottom:-4px;
-    left:20px;
-
-}
-h4{
-
-font-family: fantasy;
-font-weight: 100;
-font-size: larger;
-
-
+#navbar li a:hover {
+    color: rgb(71, 13, 36);
 }
 
-h2{
-
-
-font-style: oblique;
-font-size: 30px;
-font-weight: 400;
-
+#navbar li a.active::after {
+    content: "";
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
 }
 
-h1{
-
-   font-size: 50px; 
-   font-family:Georgia, 'Times New Roman', Times, serif;
-   font-weight:10;
-   
+h4 {
+    font-family: fantasy;
+    font-weight: 100;
+    font-size: larger;
 }
-#hero{
-background-image: url("https://wallpaper.dog/large/10719727.jpg");
-height:75vh;
-width:100%;
-background-position: top 5% left 5%;
-background-size: cover;
-padding:0 10px;
-display:flex;
-flex-direction: column;
-align-items: flex-start;
-justify-content: center;
 
+h2 {
+    font-style: oblique;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 10;
+}
+
+#hero {
+    background-image: url("https://wallpaper.dog/large/10719727.jpg");
+    height: 75vh;
+    width: 100%;
+    background-position: top 5% left 5%;
+    background-size: cover;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    #header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar li {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: medium;
+    }
+
+    #hero {
+        height: 50vh;
+    }
 }
