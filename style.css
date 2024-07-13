@@ -522,3 +522,137 @@ body {
     width: 24px;
     height: 24px;
 }
+
+
+/* media queries */
+
+/* Add your media queries below */
+
+/* For tablets and larger screens (default) */
+@media (min-width: 768px) {
+    #navbar {
+        justify-content: center;
+    }
+}
+
+/* For small screens (up to 768px) */
+@media (max-width: 768px) {
+    #header {
+        padding: 10px 20px;
+    }
+
+    #navbar {
+        display: block;
+        position: static;
+        background: none;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    #navbar ul {
+        display: block;
+    }
+
+    #navbar li {
+        margin: 10px 0;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .section_p1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section_p1 .fe-box {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+}
+
+/* For very small screens (up to 480px) */
+@media (max-width: 480px) {
+    .logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    #navbar li a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .section_p1 {
+        padding: 50px 10px;
+    }
+
+    .section_p1 .fe-box {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    #hero h1 {
+        font-size: 40px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    .banner {
+        text-align: center;
+    }
+
+    .banner button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Custom responsive adjustments */
+@media (max-width: 1024px) {
+    #header {
+        padding: 10px 30px;
+    }
+
+    #navbar {
+        padding: 10px;
+    }
+
+    .section_p1 {
+        padding: 50px 20px;
+    }
+}
+
+
+
+/* Media Queries for Feature Section */
+@media (max-width: 768px) {
+    .section_p1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 10px; /* Adjust padding */
+    }
+
+    .section_p1 .fe-box {
+        min-width: 200px; /* Adjust minimum width */
+    }
+}
+
+@media (max-width: 480px) {
+    .section_p1 {
+        padding: 20px 5px; /* Adjust padding */
+    }
+
+    .section_p1 .fe-box {
+        min-width: 150px; /* Adjust minimum width */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .section_p1 h6 {
+        font-size: 20px; /* Adjust font size */
+    }
+}
