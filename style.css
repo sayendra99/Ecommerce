@@ -1,19 +1,6 @@
 /* General styles */
 
 .logo {
-    height: 20%;
-    width: 20%;
-    border-radius: 50%;
-}
-
-.homeicon {
-    height: 10%;
-    border-radius: 11px;
-}
-
-#/* General styles */
-
-.logo {
     height: 50px; /* Adjust height as needed */
     width: 50px; /* Adjust width as needed */
     border-radius: 50%;
@@ -29,7 +16,6 @@
     background: #c0f5a3;
     box-shadow: 0 5px 15px rgba(78, 78, 78, 0.06);
     width: 100%;
-    max-width: 1230px;
     margin: 0 auto;
     position: fixed;
     top: 0;
@@ -41,26 +27,24 @@
 
 #navbar {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: center; /* Center align items */
+    flex-grow: 1; /* Allow navbar to grow and take available space */
     background-color: #c0f5a3; /* Navbar background color */
-    padding: 10px 0; /* Adjusted padding */
+    padding: 10px 0;
     box-shadow: 0 5px 15px rgba(78, 78, 78, 0.06);
-    position: fixed;
-    top: 100px; /* Adjusted top position */
-    width: 100%;
     z-index: 1000;
 }
 
 #navbar ul {
     list-style: none;
     display: flex;
+    justify-content: center; /* Center align items within ul */
     margin: 0;
     padding: 0;
 }
 
 #navbar li {
-    margin: 0 10px; /* Adjusted margin */
+    margin: 0 15px; /* Adjusted margin */
     position: relative;
 }
 
@@ -71,28 +55,30 @@
     font-weight: 200;
     transition: 0.2s ease;
     color: #333;
-    padding: 10px; /* Adjusted padding */
+    padding: 45px; /* Adjusted padding */
 }
 
-#navbar li a.active {
+#navbar li a.active,
+#navbar li a:focus,
+#navbar li a:active {
     font-weight: bold;
     color: #007bff;
 }
 
-/* #navbar li a:hover {
+#navbar li a:hover {
     color: rgb(71, 13, 36);
-} */
+}
 
 #navbar li a.active::after {
     content: "";
     width: 20px;
-    height: 30px;
+    height: 2px;
+    background-color: #007bff;
     position: absolute;
     bottom: -4px;
     left: 50%;
     transform: translateX(-50%);
 }
-
 
 /* Hero section */
 
@@ -182,22 +168,33 @@
 .section_p1 {
     padding: 100px 2px;
     background-color: #f0f0f0; /* Background color for the section */
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px; /* Space between cards */
+    scroll-snap-type: x mandatory; /* Enable snap scrolling */
 }
 
 .section_p1 .fe-box {
     text-align: center;
     box-shadow: 2px 20px 33px rgba(15, 75, 135, 0.1); /* Adjusted box shadow color */
     border-radius: 19px;
+    margin: 20px 0; /* Remove side margins for horizontal alignment */
     padding: 20px;
-    margin: 20px;
+    min-width: 250px; /* Set a minimum width for the cards */
+    scroll-snap-align: start; /* Snap position for cards */
     background-color: white;
 }
 
 .section_p1 img {
-    height: 100px; /* Adjusted height for the image */
+    /* height: 100px; /* Adjusted height for the image */
+    /* display: block;
+    margin: 0 auto;
+    border-radius: 50%; Rounded image */ */
+    height: 35px;
     display: block;
     margin: 0 auto;
-    border-radius: 50%; /* Rounded image */
+    border-radius: 20%;
+    width: 10px;
 }
 
 .section_p1 h6 {
@@ -208,5 +205,5 @@
 
 /* Ensure the hero section doesn't overlap with the fixed header */
 body {
-    padding-top: 150px; /* Adjusted to match the height of the fixed header */
+    padding-top: 80px; /* Adjusted to match the height of the fixed header */
 }
