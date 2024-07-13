@@ -394,3 +394,131 @@ body {
         background-color: #07dd35; /* Darker green on hover */
         transform: scale(1.05); /* Slightly enlarge button on hover */
     }
+
+    /* another section */
+
+
+    /* Clothing banners section styles */
+#clothing-banners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 20px;
+    gap: 20px;
+}
+
+#clothing-banners .banner {
+    position: relative;
+    width: calc(33.333% - 20px);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#clothing-banners .banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#clothing-banners .banner-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#clothing-banners .banner-info h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#clothing-banners .banner-info p {
+    margin: 10px 0 0;
+    font-size: 1em;
+}
+
+#clothing-banners .banner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* footer page */
+
+/* Footer styles */
+#site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ccc;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons li a img {
+    width: 24px;
+    height: 24px;
+}
