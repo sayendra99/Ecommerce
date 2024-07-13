@@ -344,3 +344,53 @@ body {
 .feature-item .add-to-cart:hover {
     background-color: #218838; /* Darker green on hover */
 }
+
+
+/* advertisment section  */
+#banner{padding: 50px 20px;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20200701/ourmid/pngtree-childrens-clothing-creative-geometric-graphic-promotion-background-image_344192.jpg");
+
+}
+
+    #banner .banner-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        border-radius: 10px;
+    }
+
+    #banner h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        background: linear-gradient(to right, #dc087d 10%, #eed9cc 99%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Impact;
+    }
+    
+    #banner p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    
+    #banner .Explore_button {
+        background-color: #794ee8; /* Green background */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    #banner .Explore_button:hover {
+        background-color: #07dd35; /* Darker green on hover */
+        transform: scale(1.05); /* Slightly enlarge button on hover */
+    }
