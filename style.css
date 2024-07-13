@@ -166,9 +166,15 @@
 /* Feature section */
 
 .section_p1 {
-    padding: 100px 2px;
-    background-color: #f0f0f0; /* Background color for the section */
+    padding: 100px 20px; /* Adjust padding for better spacing */
+    background: linear-gradient(90deg, #ff6e2f 0%, #ff8132 25%, #6a11e7 50%,#2eff2a 75%, #79a130 100%);
     display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px; /* Space between cards */
+    scroll-snap-type: x mandatory; /* Enable snap scrolling */
+    position: relative; 
+    /* height: 75vh; */
+    width: 100%;
     overflow-x: auto; /* Enable horizontal scrolling */
     gap: 20px; /* Space between cards */
     scroll-snap-type: x mandatory; /* Enable snap scrolling */
@@ -185,22 +191,69 @@
     background-color: white;
 }
 
+
+.section_p1 .fe-box0 {
+    text-align: center;
+    box-shadow: 2px 20px 33px rgba(15, 75, 135, 0.1); /* Adjusted box shadow color */
+    border-radius: 19px;
+    margin: 20px 0; /* Remove side margins for horizontal alignment */
+    padding: 20px;
+    min-width: 250px; /* Set a minimum width for the cards */
+    scroll-snap-align: start; /* Snap position for cards */
+    background-color: white;
+}
+
+.section_p1 .fe-box1 {
+    text-align: center;
+    box-shadow: 2px 20px 33px rgba(15, 75, 135, 0.1); /* Adjusted box shadow color */
+    border-radius: 19px;
+    margin: 20px 0; /* Remove side margins for horizontal alignment */
+    padding: 20px;
+    min-width: 250px; /* Set a minimum width for the cards */
+    scroll-snap-align: start; /* Snap position for cards */
+    background-color: white;
+}
+.section_p1 .fe-box2{
+    text-align: center;
+    box-shadow: 2px 20px 33px rgba(15, 75, 135, 0.1); /* Adjusted box shadow color */
+    border-radius: 19px;
+    margin: 20px 0; /* Remove side margins for horizontal alignment */
+    padding: 20px;
+    min-width: 250px; /* Set a minimum width for the cards */
+    scroll-snap-align: start; /* Snap position for cards */
+    background-color: white;
+}
+.section_p1 .fe-box3{
+    text-align: center;
+    box-shadow: 2px 20px 33px rgba(15, 75, 135, 0.1); /* Adjusted box shadow color */
+    border-radius: 19px;
+    margin: 20px 0; /* Remove side margins for horizontal alignment */
+    padding: 20px;
+    min-width: 250px; /* Set a minimum width for the cards */
+    scroll-snap-align: start; /* Snap position for cards */
+    background-color: white;
+}
+
 .section_p1 img {
     /* height: 100px; /* Adjusted height for the image */
     /* display: block;
     margin: 0 auto;
     border-radius: 50%; Rounded image */ */
-    height: 35px;
+    height: 100px; /* Set a reasonable height */
+    width: 100px; /* Set a reasonable width */
     display: block;
     margin: 0 auto;
-    border-radius: 20%;
-    width: 10px;
-}
+    border-radius: 50%; /* Adjust as needed for desired roundness */
+    object-fit: cover; }
+
 
 .section_p1 h6 {
     margin-top: 10px;
-    font-size: 20px; /* Adjusted font size */
-    color: #333; /* Text color */
+    font-size: 25px; /* Adjusted font size */
+    background: linear-gradient(90deg, #e15215 0%, #f989b8 25%, #6a11e7 50%, #7af477 75%, #d1ff7b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:Tahoma;
 }
 
 /* Ensure the hero section doesn't overlap with the fixed header */
