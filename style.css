@@ -348,13 +348,13 @@ body {
 
 /* advertisment section  */
 #banner{padding: 50px 20px;
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    background: linear-gradient(135deg, #ff5c77 22%, #d2bfc6,orange 33%,purple 20%);
     color: white;
     text-align: center;
     position: relative;
     overflow: hidden;
-    background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20200701/ourmid/pngtree-childrens-clothing-creative-geometric-graphic-promotion-background-image_344192.jpg");
-
+ 
+  
 }
 
     #banner .banner-content {
@@ -368,7 +368,7 @@ body {
     #banner h2 {
         font-size: 2.5em;
         margin-bottom: 20px;
-        background: linear-gradient(to right, #dc087d 10%, #eed9cc 99%);
+        background: linear-gradient(to right, #dc087d 10%, #ff6b0f 99%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: Impact;
